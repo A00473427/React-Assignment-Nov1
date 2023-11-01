@@ -23,6 +23,8 @@ export default function About(props){
                 </h1>
                 <p>
                     I'm currently a Graduate Student pursuing MSCDA. I will be graduating in 2024. Meanwhile I also intern as a Full stack developer at KardioDiagnostix.
+                </p><p>
+                    I Joined MSCDA as it was aligned with my expectations. The city of Halifax was also another reason why I chose this University and program.
                 </p>
                 <div className="btn-con">
                     <a className="main-btn" href={myResume} download={true}>

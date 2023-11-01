@@ -95,6 +95,11 @@
     line-height: 2rem;
 }
 
+.header-content .right-header p:not(:first-child) {
+    margin-top: 0;
+    line-height: 2rem;
+}
+
 .header-content .right-header .name span {
     color: var(--color-secondary);
 }
