@@ -1,0 +1,130 @@
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+}
+
+.header-content .weather-widget {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-content .right-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 18rem;
+}
+
+.header-content .right-header .name {
+    font-size: 3rem;
+}
+
+.btn-con {
+    display: flex;
+    align-self: flex-start;
+}
+
+.main-btn {
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 600;
+    position: relative;
+    border: 1px solid var(--color-secondary);
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-btn .btn-text {
+    padding: 0 2rem;
+}
+
+.main-btn .btn-icon {
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.header-content .weather-widget .h-shape {
+    transition: all 0.4s ease-in-out;
+    width: 65%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+}
+
+.header-content .right-header .t-shape {
+    transition: all 0.4s ease-in-out;
+    width: 95%;
+    height: 100%;
+    background-image: url('/src/assets/images/halifax.jpeg');
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    clip-path: polygon(100% 100%, 37% 100%, 21% 0, 100% 0%);
+    background-size: cover;
+    opacity: 45%;
+}
+
+.header-content .weather-widget .image {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 50%;
+    width: 60%;
+    margin-left: 4rem;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 2px 2px 15px #CCCCCC;
+    padding-bottom: 20px;
+}
+
+.header-content .weather-widget .image .temp {
+    font-size: 125px;
+    text-align: center;
+    margin: 20px;
+    font-weight: 200;
+    position: relative;
+}
+
+.header-content .weather-widget .image .unit {
+    font-size: 27px;
+    font-weight: 100;
+    position: absolute;
+    top: 20px;
+}
+
+.header-content .weather-widget .image img {
+    width: 55%;
+    height: 55%;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+}
+
+.header-content .right-header .name {
+    font-size: 3rem;
+}
+
+.header-content .right-header p {
+    margin: 1.5rem 0;
+    line-height: 2rem;
+}
+
+.header-content .right-header .name span {
+    color: var(--color-secondary);
+}
+
+.main-btn:hover {
+    transition: all 0.4s ease-out;
+}

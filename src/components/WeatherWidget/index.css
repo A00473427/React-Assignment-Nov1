@@ -1,0 +1,52 @@
+.wraper {
+    display: grid;
+    grid-template-columns: auto auto;
+    float: right;
+    align-items: center;
+    margin-right: 20px;
+}
+.label-text {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.switch-wrap {
+    cursor: pointer;
+    background: #ccc;
+    padding: 3px;
+    width: 45px;
+    height: 24px;
+    border-radius: 33.5px;
+    display: inline-block;
+}
+.switch-wrap input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.switch {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0fr 1fr 1fr;
+    transition: 0.2s;
+}
+.switch::after {
+    content: 'C';
+    border-radius: 50%;
+    background: #ccc;
+    grid-column: 2;
+    text-align: center;
+    padding-top: 2px;
+    padding-left: 1px;
+    color: white;
+    font-weight: 700;
+    transition: background 0.2s;
+    background-color: var(--color-secondary);
+}
+input:checked + .switch {
+    grid-template-columns: 1fr 1fr 0fr;
+}
+input:checked + .switch::after {
+    content: 'F';
+    
+}
