@@ -18,8 +18,8 @@ export default function About(props){
             </div>
             <div className="right-header">
                 <h1 className="name">
-                    Hi, I'm <span>Deepakk Vignesh Jayamohan</span>, 
-                    A Frontend Developer.
+                    Hi, I'm Deepakk Vignesh Jayamohan <span><u>(Dev Branch)</u></span>, 
+                    A Frontend Developer
                 </h1>
                 <p>
                     I'm currently a Graduate Student pursuing MSCDA. I will be graduating in 2024. Meanwhile I also intern as a Full stack developer at KardioDiagnostix.
