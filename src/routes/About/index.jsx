@@ -18,7 +18,7 @@ export default function About(props){
             </div>
             <div className="right-header">
                 <h1 className="name">
-                    Hi, I'm <span>Deepakk Vignesh Jayamohan</span>, 
+                Hi, I'm Deepakk Vignesh Jayamohan <span><u>(Production Branch)</u></span>, 
                     A Frontend Developer.
                 </h1>
                 <p>
